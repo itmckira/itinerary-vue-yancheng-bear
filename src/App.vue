@@ -115,10 +115,10 @@ const stops = ref([
   },
   {
     id: "walk-to-ferry",
-    time: "步行",
+    time: "建議 11:00/11:30",
     tag: "交通",
-    title: "走去渡輪（前往旗津）",
-    note: "從哈瑪星/駁二步行到渡輪站，沿途可順拍港邊風景。",
+    title: "棧貳庫─旗津",
+    note: "建議登船時間：11:00 或 11:30（每30分鐘一班）。從哈瑪星/駁二步行到渡輪站，沿途可順拍港邊風景。",
     mapLink: "https://www.google.com/maps/search/?api=1&query=鼓山輪渡站",
     embedLink: "https://www.google.com/maps?q=鼓山輪渡站&output=embed",
     duration: "渡輪 5 分鐘"
