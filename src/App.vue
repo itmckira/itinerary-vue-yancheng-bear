@@ -168,7 +168,7 @@ const stops = ref([
     note: "準備前往台南入住；若遇塞車可提早 10–20 分鐘出發。",
     mapLink: "https://www.google.com/maps/search/?api=1&query=駁二藝術特區",
     embedLink: "https://www.google.com/maps?q=駁二藝術特區&output=embed",
-    duration: "約 40-50 分鐘車程"
+    duration: "約 90-120 分鐘車程"
   },
   {
     id: "tainan-hotel",
@@ -177,7 +177,17 @@ const stops = ref([
     title: "入住｜暖時嚼旅",
     note: "抵達後先放行李、再安排晚餐/夜散步。",
     mapLink: "https://www.google.com/maps/search/?api=1&query=暖時嚼旅 台南",
-    embedLink: "https://www.google.com/maps?q=暖時嚼旅%20台南&output=embed"
+    embedLink: "https://www.google.com/maps?q=暖時嚼旅%20台南&output=embed",
+    duration: "步行或短程車程"
+  },
+  {
+    id: "dandan-burger",
+    time: "晚上點心",
+    tag: "台南美食",
+    title: "丹丹漢堡",
+    note: "台南在地速食品牌，推薦嘗試招牌丹丹漢堡、雞塊、麵線羹等特色餐點。",
+    mapLink: "https://www.google.com/maps/search/?api=1&query=丹丹漢堡 台南",
+    embedLink: "https://www.google.com/maps?q=丹丹漢堡%20台南&output=embed"
   }
 ]);
 
