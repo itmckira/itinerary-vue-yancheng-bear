@@ -107,9 +107,9 @@ const stops = ref([
     time: "抵達",
     tag: "高雄",
     title: "駁二哈瑪星｜停車",
-    note: "建議停車後步行銜接：走去渡輪。",
-    mapLink: "https://www.google.com/maps/search/?api=1&query=哈瑪星 駁二 停車",
-    embedLink: "https://www.google.com/maps?q=哈瑪星%20駁二%20停車&output=embed",
+    note: "24H 臨海新路棧西停車場（大客車＆小客車），建議停車後步行銜接：走去渡輪。",
+    mapLink: "https://www.google.com/maps/search/?api=1&query=臨海新路棧西停車場",
+    embedLink: "https://www.google.com/maps?q=臨海新路棧西停車場&output=embed",
     altLink: "https://www.google.com/maps/search/?api=1&query=哈瑪星",
     duration: "步行 8-10 分鐘"
   },
