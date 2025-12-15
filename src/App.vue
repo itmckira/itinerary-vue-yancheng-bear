@@ -5,7 +5,7 @@
         <div class="title">行程｜屏東海生館 → 高雄駁二 → 台南入住</div>
         <div class="subtitle">點選站點可切換右側地圖預覽；每站都可一鍵打開 Google Maps。</div>
       </div>
-      <div class="pill">🚋 13:00 駁二散步｜🧸 鹽埕小熊（輕軌真愛碼頭站）｜🕒 15:30 離開駁二｜🏨 台南 暖時嚼旅</div>
+      <div class="pill">13:00 駁二散步｜鹽埕小熊（輕軌真愛碼頭站）｜15:30 離開駁二｜台南 暖時嚼旅</div>
     </div>
 
     <div class="grid">
@@ -33,15 +33,15 @@
                   <p class="note">{{ s.note }}</p>
 
                   <div v-if="s.nearestStop" class="badge" style="margin-bottom:10px;">
-                    🚉 最近下車：{{ s.nearestStop }}
+                    最近下車：{{ s.nearestStop }}
                   </div>
 
                   <div class="actions">
                     <a class="btn primary" :href="s.mapLink" target="_blank" rel="noreferrer">
-                      🗺️ 開啟 Google 地圖
+                      開啟 Google 地圖
                     </a>
                     <a v-if="s.altLink" class="btn" :href="s.altLink" target="_blank" rel="noreferrer">
-                      ⭐ 備用連結
+                      備用連結
                     </a>
                   </div>
                 </div>
@@ -49,14 +49,10 @@
 
               <div v-if="s.duration && idx < stops.length - 1" class="duration-gap">
                 <div class="duration-line"></div>
-                <div class="duration-text">⏱️ {{ s.duration }}</div>
+                <div class="duration-text">{{ s.duration }}</div>
                 <div class="duration-line"></div>
               </div>
             </template>
-          </div>
-
-          <div style="margin-top:14px" class="small">
-            小提示：如果你想把「停車點 / 渡輪碼頭」改成更精準的位置，直接把站點 title 改成完整地址或地標名稱即可。
           </div>
         </div>
       </section>
@@ -75,7 +71,7 @@
           <div v-if="activeStop.nearestStop"><b>最近下車：</b>{{ activeStop.nearestStop }}</div>
           <div>備註：{{ activeStop.note }}</div>
           <div style="margin-top:8px;">
-            <a class="btn primary" :href="activeStop.mapLink" target="_blank" rel="noreferrer">🧭 用 Google Maps 導航</a>
+            <a class="btn primary" :href="activeStop.mapLink" target="_blank" rel="noreferrer">用 Google Maps 導航</a>
           </div>
         </div>
       </section>
@@ -119,6 +115,16 @@ const stops = ref([
     tag: "交通",
     title: "棧貳庫─旗津",
     note: "建議登船時間：11:00 或 11:30（每30分鐘一班）。從哈瑪星/駁二步行到渡輪站，沿途可順拍港邊風景。",
+    mapLink: "https://www.google.com/maps/search/?api=1&query=棧貳庫",
+    embedLink: "https://www.google.com/maps?q=棧貳庫&output=embed",
+    duration: "渡輪 5 分鐘"
+  },
+  {
+    id: "gushan-ferry",
+    time: "備選",
+    tag: "交通",
+    title: "鼓山渡輪站",
+    note: "若棧貳庫渡輪班次不合適，可選擇鼓山渡輪站（班次更頻繁，約10-15分鐘一班）。",
     mapLink: "https://www.google.com/maps/search/?api=1&query=鼓山輪渡站",
     embedLink: "https://www.google.com/maps?q=鼓山輪渡站&output=embed",
     duration: "渡輪 5 分鐘"
